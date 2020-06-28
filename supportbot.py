@@ -32,7 +32,7 @@ async def on_message(message):
 		return
 
 	if message.content.startswith('?help'):
-		msg = "```asciidoc\n=====================================\n= This is help message for SupportBot\n=====================================\n?help    :: This message\n \n= Transcendence wallet help =\n?download    :: Download Teloscoin wallet\n?winstall   :: How to install Teloscoin wallet\n?wsync   :: Wallet sync help\n?portf   :: How to open ports on your router\n?werror    :: Fix wallet errors (resync and reindex)\n?staking :: Staking info\n \n= Masternode help =\n?mninstall :: Masternode install with LoboHub script\n?mnstats  :: Masternode status after install (sync, getinfo)\n?mnports   :: Check open ports on VPS```".format(message)
+		msg = "```asciidoc\n=====================================\n= This is help message for SupportBot\n=====================================\n?help    :: This message\n \n= Transcendence wallet help =\n?download    :: Download Teloscoin wallet\n?winstall   :: How to install Teloscoin wallet\n?wsync   :: Wallet sync help\n?portf   :: How to open ports on your router\n?werror    :: Fix wallet errors (resync and reindex)\n?staking :: Staking info\n \n= Masternode help =\n?mninstall :: Masternode install with LoboHub script\n?mnstats  :: Masternode status after install (sync, getinfo)\n?mnports   :: Check open ports on VPS\n?1k   :: 1k info\n?roi   :: ROI info\n?100k   :: 100k info\n?fork   :: Fork info\n?bitdorado   :: Bitdorado info```".format(message)
 		await message.channel.send(msg)
 
 	elif message.content.startswith('?download'):
@@ -70,6 +70,26 @@ async def on_message(message):
 
 	elif message.content.startswith('?mnports'):
 		msg = "To check open ports on your server type\n```ufw status```To add port for listen\n```ufw allow 8051/tcp```".format(message)
+		await message.channel.send(msg)		
+
+	elif message.content.startswith('?1k'):
+		msg = "Contrary to the stats you can see on some masternodes platforms such as MNO, the ROI for the first tier nodes (1000 telos) is not 4000%  or anything crazy like that... It's much less, really. + with the incoming fork in July and the first reward delay, you will most probably not receive one single reward before your node gets invalid because of the fork. So it's better to get a bit more than 1k (if you get 5k you can join the Bitdorado Pool and stake your coins there).".format(message)
+		await message.channel.send(msg)
+
+	elif message.content.startswith('?roi'):
+		msg = "To see the most accurate stats concerning the ROIs, rewards frequencies and first reward delays for Telos masternodes, please check <https://masternodestats.info/> - The ROI you will see on other websites might be totally misleading. We have contacted those websites many times, but they don't seem so eager to solve the issue on their side, that's why one faithful member of our community decided to create his own accurate platform. Also, bear in mind that ANY kind of ROI you will see is nothing but an `instant snapshot`. A 50% yearly ROI now doesn't mean you will have 50% more coins at the end of the year by launching a node now. Because every node that is added to or withdrawn from the network will change this ROI (the more nodes are added, the more the rewards are `spread` so the lesser the ROI). The `real` ROI also has to take into consideration the natural growth of the coin (feel free to check the historic graphs for Telos, you'll find out that there's much more to it than just nodes `dry ROI`.".format(message)
+		await message.channel.send(msg)
+
+	elif message.content.startswith('?100k'):
+		msg = "Every tier works on the basis of the 100k tier (the `King`). For instance, if the 100k nodes receive, at one point, their first reward 4 days after first launch and then every 1.5 days, then the other tiers will see their delays multiplied accordingly. 1k node will have 100x more delayed rewards than 100k. Everyday new 100k nodes join the network, so those delays get higher and higher...".format(message)
+		await message.channel.send(msg)
+
+	elif message.content.startswith('?fork'):
+		msg = "In July (precise date to be determined) there will be a fork which changes the block rewards down to 50 (compared to 100 now), and will enforce the update of all the nodes in the network, and also new collaterals. The 1k, 3k, 10k and 30k collaterals won't exist anymore. They will be replaced by 100k (new minimum), 300k, 1kk 3kk and 10k tier.".format(message)
+		await message.channel.send(msg)		
+
+	elif message.content.startswith('?bitdorado'):
+		msg = "If you have `small bags` (= under 100k) the very best and almost only viable option is to place your coins on the Bitdorado Pool. This will give you the best return with your small bag, because Bitdorado contains the highest amount of staking Telos, so it `sucks` almost all the staking rewards from the network :) You can feel uncomfortable with sending your coins away to another person, but bear in mind that Bitdorado is Transcendence / Telos own project, lead by Pascal Papara.".format(message)
 		await message.channel.send(msg)		
 
 client.run(token)
