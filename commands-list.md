@@ -77,4 +77,22 @@ If commands won't work type 'source .bashrc'"
 
 **?bitdorado**
 
-"If you have `small bags` (= under 100k) the very best and almost only viable option is to place your coins on the Bitdorado Pool (NEWBY pool, minimum deposit 1000, maximum 5000). This will give you the best return with your small bag, because Bitdorado contains the highest amount of staking Telos, so it `sucks` almost all the staking rewards from the network :) You can feel uncomfortable with sending your coins away to another person, but bear in mind that Bitdorado is Transcendence / Telos own project, lead by Pascal Papara."
+"NOTE : Bitdorado is now closed to new members, only open for existing members until further notice---
+If you have `small bags` (= under 100k) the very best and almost only viable option is to place your coins on the Bitdorado Pool (NEWBY pool, minimum deposit 1000, maximum 5000). This will give you the best return with your small bag, because Bitdorado contains the highest amount of staking Telos, so it `sucks` almost all the staking rewards from the network :) You can feel uncomfortable with sending your coins away to another person, but bear in mind that Bitdorado is Transcendence / Telos own project, lead by Pascal Papara."
+
+**?fork**
+
+"The TelosCoin yearly fork happens at block 1018866. It's on the 2nd of July. This fork will see the following important changes:
+-block rewards halving from 100 to 50 per block
+-masternodes/staking splitt doesn't change
+-masternode tiers are modified as following : first tier 100k, 300k, 1M, 3M and 10M
+-the wallet & daemon you need to run after the fork is the 2.1.0.0b. If your wallet & nodes are 100k tiers, already using 2.1.x.x daemon and you don't want to use a different tier you can just leave everything running.
+Please ensure to be at least on wallet 2.1 at that date.."
+
+**?support**
+
+"If you need any kind of support or have any questions concerning the project and the services, you have those options:
+-you can ask here on this discord
+-you can ask on the official Forum https://forum.teloscoin.org/
+-ONLY IF YOU HAVE A QUESTION RELATED TO ONE OF THE SERVICES : blueboxes, Bitdorado, peertoro contracts, AML-now etc. you can open a support ticket at https://peertoro.eu/
+-In every case to ensure that we will be able to help you efficiently please make sure that you give as much info as possible about your concern or issue (computer characteristics, OS, actions done and results...)"
