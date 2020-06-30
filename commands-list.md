@@ -1,12 +1,15 @@
 **?download**
+
 "To download the Transcendence (Teloscoin) wallet go to Github <https://github.com/phoenixkonsole/transcendence/releases> and download the most recent wallet for your OS"
 
 **?wallet**
+
 "Windows: Run transcendence-qt.exe and choose the folder where the blockchain will be stored, confirm and wait until the wallet sync. There is also an option to leave the default directory.
 For Linux users it is best to compile wallet from source for maximum performance.
 If you want to sync much faster you can download the most recent bootstrap, which can be found in the latest release files. You will need to unarchive this bootstrap into your Transcendence blockchain folder."
 
 **?sync**
+
 "TELOS 3.0 blockchain works on port 8051. You don't need to do any additional steps, just run the wallet. If for some reason the wallet won't sync check if you have the latest TELOS wallet"
 
 **?portf**
@@ -56,6 +59,7 @@ If commands wont' work type 'source .bashrc'
 'ufw allow 8051/tcp'
 
 **?tiers**
+
 TELOS 3.0 fork bring new masternode collateral:
 -100k
 -300k
@@ -64,6 +68,7 @@ TELOS 3.0 fork bring new masternode collateral:
 -10kk (10 million)
 
 **?telos3**
+
 What is new in TELOS 3.0:
 - CSV export can be found in Settings
 - Added halving to 50 TELOS at block 1018866
@@ -108,6 +113,7 @@ Please ensure to be at least on wallet 2.1 at that date.."
 -In every case to ensure that we will be able to help you efficiently please make sure that you give as much info as possible about your concern or issue (computer characteristics, OS, actions done and results...)"
 
 **?links**
+
 Official & Community Transcendence links:
 https://telosgreen.org - Official website
 https://forum.teloscoin.org - Official forum
