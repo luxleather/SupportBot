@@ -1,30 +1,27 @@
 **?download**
-
 "To download the Transcendence (Teloscoin) wallet go to Github <https://github.com/phoenixkonsole/transcendence/releases> and download the most recent wallet for your OS"
 
-**?winstall**
-
-"Windows: Run transcendence-qt.exe and choose the folder where the blockchain will be stored, confirm and wait until the wallet syncs. There is also an option to leave the default directory.
+**?wallet**
+"Windows: Run transcendence-qt.exe and choose the folder where the blockchain will be stored, confirm and wait until the wallet sync. There is also an option to leave the default directory.
 For Linux users it is best to compile wallet from source for maximum performance.
 If you want to sync much faster you can download the most recent bootstrap, which can be found in the latest release files. You will need to unarchive this bootstrap into your Transcendence blockchain folder."
 
-**?wsync**
-
-"TELOS 2.0 blockchain works on port 8051. You don't need to do any additional steps, just run the wallet. If for some reason the wallet won't sync check if you have the latest TELOS 2.1.0.0b version with DNS-SEEDER"
+**?sync**
+"TELOS 3.0 blockchain works on port 8051. You don't need to do any additional steps, just run the wallet. If for some reason the wallet won't sync check if you have the latest TELOS wallet"
 
 **?portf**
 
 "Go to <https://portforward.com/router.htm>, find your modem/router model and follow the steps for port forwarding.
 Check if port 8051 is open on <https://portchecker.co/>"		
 
-**?werror**
+**?error**
 
-"If you have problems with receiving coins and txid, one of those options can be used : -rescan or -reindex (rereading blocks from start). Use -resync only if you want to rebuild blockchain from scratch. (Keep in mind that you NEED to backup your wallet.dat)"
+"If you have problems with receiving coins and txid, one of those options can be used : -rescan or -reindex (rereading blocks from start). Use -resync only if you want to rebuild blockchain from scratch."
 
 **?staking**
 
 "Criterias before you can get staking coins.
--You need at least 1000 unlocked coins in your wallet
+-You need at least X unlocked coins in your wallet
 -Your wallet need to be on "Staking active" (encrypted & unlocked for staking)
 -Your wallet is automatically staking, as long as it is Synced
 *More info:*
@@ -32,15 +29,13 @@ Check if port 8051 is open on <https://portchecker.co/>"
 
 **?mninstall**
 
-"If you want simplified installation of maternode you can use the latest installation script
-wget https://raw.githubusercontent.com/lobomfz/Masternode-tools/master/lobohub.sh && chmod +x lobohub.sh
-To use it run
-./lobohub.sh
-The script provides fast and secure installation of masternodes with many additional options.***Credits to Lobo***"
+If you want simplified installation of maternode please follow detailed guide from Telosgreen official website: https://telosgreen.org/EN/gettingstarted/setupofnodes/
 
 **?mnstats**
 
-"Script commands for easy health checking of your MN (using lobo's script):
+Masternode Commands:
+replace word ALIAS with the name of your Master Node. as example, if name is MN01, then you would use "MN01_status".
+
 ALIAS_start - Start masternode
 ALIAS_restart - Restart masternode
 ALIAS_status - Masternode status
@@ -50,7 +45,8 @@ ALIAS_getinfo - Block count/No. of connections
 ALIAS_getpeerinfo - Stats of connected peers
 ALIAS_resync - Resync mn wallet
 ALIAS_reindex - Reindex mn wallet
-If commands won't work type 'source .bashrc'"
+
+If commands wont' work type 'source .bashrc'
 
 
 **?mnports**
@@ -59,9 +55,27 @@ If commands won't work type 'source .bashrc'"
 'ufw status' To add port for listen
 'ufw allow 8051/tcp'
 
-**?1k**
+**?tiers**
+TELOS 3.0 fork bring new masternode collateral:
+-100k
+-300k
+-1kk (1 million)
+-3kk (3 million)
+-10kk (10 million)
 
-"Contrary to the stats you can see on some masternodes platforms such as MNO, the ROI for the first tier nodes (1000 telos or 100k after July fork) is not 4000%  or anything crazy like that... It's much less, really. + with the incoming fork in July and the first reward delay, you will most probably not receive one single reward before your node gets invalid because of the fork. So it's better to get a bit more than 1k (if you get 5k you can join the Bitdorado Pool and stake your coins there)."
+**?telos3**
+What is new in TELOS 3.0:
+- CSV export can be found in Settings
+- Added halving to 50 TELOS at block 1018866
+- Added collateral change to Tiers 100K / 300K / 1M / 3M / 10M
+- Added new spork and checks against Fakenodes and Stake attacks (new consensus doesnt allow to receive Stake and MN reward in the same block for the same reward)
+- Wallet enforces users to add Encryption
+- Masternodeprivkeys are now stored in wallet and not in transcendence.conf
+- Wallet.dat is obfuscated randomly to prevent malware from finding it - Convetional Wallet.dat can be exported as file in order to move to another machine
+- Explanation why we do this kind of Fraud Prevention at first startup
+- IPv6 support has been dropped
+- Backup the passphrase via email
+
 
 **?roi**
 
@@ -70,10 +84,6 @@ If commands won't work type 'source .bashrc'"
 **?100k**
 
 "Every tier works on the basis of the 100k tier (the `King`) (the "new King" will be 10M after the July fork). For instance, if the 100k nodes receives, at one point, their first reward 4 days after first launch and then every 1.5 days, then the other tiers will see their delays multiplied accordingly. 1k node will have 100x more delayed rewards than 100k. Everyday new 100k nodes join the network, so those delays get higher and higher..."
-
-**?fork**
-
-"In July (on block 1018866) there will be a fork which changes the global block rewards down to 50 (compared to 100 now), and will enforce the update of all the nodes in the network, and also new collaterals. The 1k, 3k, 10k and 30k collaterals won't exist anymore. They will be replaced by 100k (new minimum), 300k, 1kk 3kk and 10kk tiers."	
 
 **?bitdorado**
 
@@ -96,3 +106,20 @@ Please ensure to be at least on wallet 2.1 at that date.."
 -you can ask on the official Forum https://forum.teloscoin.org/
 -ONLY IF YOU HAVE A QUESTION RELATED TO ONE OF THE SERVICES : blueboxes, Bitdorado, peertoro contracts, AML-now etc. you can open a support ticket at https://peertoro.eu/
 -In every case to ensure that we will be able to help you efficiently please make sure that you give as much info as possible about your concern or issue (computer characteristics, OS, actions done and results...)"
+
+**?links**
+Official & Community Transcendence links:
+https://telosgreen.org - Official website
+https://forum.teloscoin.org - Official forum
+https://github.com/phoenixkonsole/transcendence - Official GitHub
+https://bitcoin-subsidium.org - Official BitcoinSubsidium
+https://governance.rocks - Official Governance
+https://bitstreams.tv - Video & Stream platform
+https://masternodestats.info - Masternode Statistics
+https://explorer.teloscoin.org - Telos explorer
+https://explorer.bitcoin-subsidium.org - XBTX explorer
+https://discord.gg/ykFdsHD - Community discord
+https://t.me/teloscointranscendenceblockchain - English Telegram
+https://t.me/telosturkey - Turkish Telegram
+https://telosnews.com - Telos news
+https://cryptoacid.com - Telos articles
