@@ -1,6 +1,6 @@
 **?download**
 
-"To download the Transcendence (Teloscoin) wallet go to Github <https://github.com/phoenixkonsole/transcendence/releases> and download the most recent wallet for your OS"
+"To download the Transcendence (Teloscoin) wallet go to Github <https://github.com/phoenixkonsole/transcendence/releases> and download the most recent wallet for your OS. At least 2.1 is recommended before fork (block 1018866), after fork wallet 3.0."
 
 **?wallet**
 
@@ -92,8 +92,8 @@ What is new in TELOS 3.0:
 
 **?bitdorado**
 
-"NOTE : Bitdorado is now closed to new members, only open for existing members until further notice---
-If you have `small bags` (= under 100k) the very best and almost only viable option is to place your coins on the Bitdorado Pool (NEWBY pool, minimum deposit 1000, maximum 5000). This will give you the best return with your small bag, because Bitdorado contains the highest amount of staking Telos, so it `sucks` almost all the staking rewards from the network :) You can feel uncomfortable with sending your coins away to another person, but bear in mind that Bitdorado is Transcendence / Telos own project, lead by Pascal Papara."
+"IMPORTANT NOTICE: until further notice Bitdorado pools & services are CLOSED TO NEW USERS. Only already registered users can use and deposit coins right now.
+If you have small bags (= under 100k) the very best and almost only viable option is to place your coins on the Bitdorado Pool (NEWBY pool - minimum 1000, maximum 5000 Teloscoins). This will give you the best return with your small bag, because Bitdorado contains the highest amount of staking Telos, so it sucks almost all the staking rewards from the network  You can feel uncomfortable with sending your coins away to another person, but bear in mind that Bitdorado is Transcendence / Telos own project, lead by Pascal Papara."
 
 **?fork**
 
