@@ -1,6 +1,6 @@
 **?download**
 
-"To download the Transcendence (Teloscoin) wallet go to Github <https://github.com/phoenixkonsole/transcendence/releases> and download the most recent wallet for your OS. At least 2.1 is recommended before fork (block 1018866), after fork wallet 3.0."
+"To download the Transcendence (Teloscoin) wallet go to Github <https://github.com/phoenixkonsole/transcendence/releases> and download the most recent wallet for your OS. At least 3.0 is recommended after block 1276502). Please note that the 3.0 release will also work with the pre-fork network (before block 1276502), so it is highly recommended that you download it right now."
 
 **?wallet**
 
@@ -10,7 +10,7 @@ If you want to sync much faster you can download the most recent bootstrap, whic
 
 **?sync**
 
-"TELOS 3.0 blockchain works on port 8051. You don't need to do any additional steps, just run the wallet. If for some reason the wallet won't sync check if you have the latest TELOS wallet"
+"TELOS 3.0 blockchain works on port 8051. You don't need to do any additional steps, just run the wallet. If for some reason the wallet won't sync check if you have the latest TELOS wallet. To help you sync faster you can also download the bootstrap : https://github.com/phoenixkonsole/transcendence/releases/download/2.2/Bootstrap.7z "
 
 **?portf**
 
@@ -24,7 +24,7 @@ Check if port 8051 is open on <https://portchecker.co/>"
 **?staking**
 
 "Criterias before you can get staking coins.
--You need at least X unlocked coins in your wallet
+-You need at least 1000 unlocked coins in your wallet
 -Your wallet need to be on "Staking active" (encrypted & unlocked for staking)
 -Your wallet is automatically staking, as long as it is Synced
 *More info:*
@@ -60,7 +60,7 @@ If commands wont' work type 'source .bashrc'
 
 **?tiers**
 
-TELOS 3.0 fork bring new masternode collateral:
+TELOS 3.0 has this masternode collateral distribution:
 -100k
 -300k
 -1kk (1 million)
@@ -71,10 +71,11 @@ TELOS 3.0 fork bring new masternode collateral:
 
 What is new in TELOS 3.0:
 - CSV export can be found in Settings
-- Added halving to 50 TELOS at block 1018866
-- Added collateral change to Tiers 100K / 300K / 1M / 3M / 10M
+- changing Masternodes/staking reward splitt at block 1276502 : 30% (staking) 70% (MNs)
+- Masternode Collateral Tiers 100K / 300K / 1M / 3M / 10M
 - Added new spork and checks against Fakenodes and Stake attacks (new consensus doesnt allow to receive Stake and MN reward in the same block for the same reward)
 - Wallet enforces users to add Encryption
+- Security fixes
 - Masternodeprivkeys are now stored in wallet and not in transcendence.conf
 - Wallet.dat is obfuscated randomly to prevent malware from finding it - Convetional Wallet.dat can be exported as file in order to move to another machine
 - Explanation why we do this kind of Fraud Prevention at first startup
@@ -86,9 +87,9 @@ What is new in TELOS 3.0:
 
 "To see the most accurate stats concerning the ROIs, rewards frequencies and first reward delays for Telos masternodes, please check <https://masternodestats.info/> - The ROI you will see on other websites might be totally misleading. We have contacted those websites many times, but they don't seem so eager to solve the issue on their side, that's why one faithful member of our community decided to create his own accurate platform. Also, bear in mind that ANY kind of ROI you will see is nothing but an `instant snapshot`. A 50% yearly ROI now doesn't mean you will have 50% more coins at the end of the year by launching a node now. Because every node that is added to or withdrawn from the network will change this ROI (the more nodes are added, the more the rewards are `spread` so the lesser the ROI). The `real` ROI also has to take into consideration the natural growth of the coin (feel free to check the historic graphs for Telos, you'll find out that there's much more to it than just nodes `dry ROI`."
 
-**?100k**
+**?10M**
 
-"Every tier works on the basis of the 100k tier (the `King`) (the "new King" will be 10M after the July fork). For instance, if the 100k nodes receives, at one point, their first reward 4 days after first launch and then every 1.5 days, then the other tiers will see their delays multiplied accordingly. 1k node will have 100x more delayed rewards than 100k. Everyday new 100k nodes join the network, so those delays get higher and higher..."
+"Every tier works on the basis of the 10M tier (the `King`) For instance, if the 10M nodes receives, at one point, their first reward 4 days after first launch and then every 1.5 days, then the other tiers will see their delays multiplied accordingly. 100k node will have 100x more delayed rewards than 10M. Everyday new nodes join the network, so those delays get longer and longer..."
 
 **?bitdorado**
 
@@ -97,19 +98,19 @@ If you have small bags (= under 100k) the very best and almost only viable optio
 
 **?fork**
 
-"The TelosCoin yearly fork happens at block 1018866. It's on the 2nd of July. This fork will see the following important changes:
--block rewards halving from 100 to 50 per block
--masternodes/staking splitt doesn't change
--masternode tiers are modified as following : first tier 100k, 300k, 1M, 3M and 10M
--the wallet & daemon you need to run after the fork is the 2.1.0.0b. If your wallet & nodes are 100k tiers, already using 2.1.x.x daemon and you don't want to use a different tier you can just leave everything running.
-Please ensure to be at least on wallet 2.1 at that date.."
+"The TelosCoin December fork happens at block 1276502. This fork will see the following important changes:
+-masternodes/staking splitt changing from 80(mn)/20(stk) to 70(mn)/30(stk)
+-masternode tiers stay as following : first tier 100k, 300k, 1M, 3M and 10M
+-the wallet & daemon you need to run after the fork is the 3.0.
+
+Please ensure to be at least on wallet 3.0 at that date.."
 
 **?support**
 
 "If you need any kind of support or have any questions concerning the project and the services, you have those options:
 -you can ask here on this discord
 -you can ask on the official Forum https://forum.teloscoin.org/
--ONLY IF YOU HAVE A QUESTION RELATED TO ONE OF THE SERVICES : blueboxes, Bitdorado, peertoro contracts, AML-now etc. you can open a support ticket at https://peertoro.eu/
+-ONLY IF YOU HAVE A QUESTION RELATED TO ONE OF THE SERVICES : blueboxes, peertoro contracts, AML-now etc. you can open a support ticket at https://peertoro.eu/
 -In every case to ensure that we will be able to help you efficiently please make sure that you give as much info as possible about your concern or issue (computer characteristics, OS, actions done and results...)"
 
 **?links**
